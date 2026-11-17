@@ -1,5 +1,5 @@
 /* Maestro #leads art — offline worker. Keeps the app, its libraries and attached files on the device. */
-const VER = "maestro-20261117063225";
+const VER = "maestro-20261117064904";
 const SHELL = ["./", "index.html", "standalone.js", "manifest.webmanifest", "icon-192.png", "icon-512.png", "icon-maskable-512.png"];
 const LIBS = "maestro-libs", BLOBS = "maestro-blobs";
 self.addEventListener("install", ev => { ev.waitUntil(caches.open(VER).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
